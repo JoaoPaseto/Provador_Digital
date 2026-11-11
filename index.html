@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provador Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PROVADOR<span>DIGITAL</span></h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#guarda-roupa">Meu Guarda-Roupa</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+
+            <p class="subtitulo">SEU ESTILO, SUA IDENTIDADE</p>
+
+            <h2>
+                Vista suas ideias.
+                <span>Crie seu estilo.</span>
+            </h2>
+
+            <p class="descricao">
+                Organize suas roupas, experimente combinações
+                e descubra novas possibilidades para o seu visual.
+            </p>
+
+            <a href="#guarda-roupa" class="botao">
+                COMEÇAR AGORA
+            </a>
+
+        </section>
+
+        <section id="guarda-roupa" class="guarda-roupa">
+
+            <p class="subtitulo">ORGANIZE SEU ESTILO</p>
+
+            <h2>Meu Guarda-Roupa</h2>
+
+            <p class="descricao">
+                Todas as suas peças em um só lugar.
+            </p>
+
+            <button class="botao" id="abrir-formulario">
+                + ADICIONAR ROUPA
+            </button>
+            
+        <form id="form-roupa" hidden>
+
+            <h3>Adicionar nova peça</h3>
+
+            <label>Foto da roupa:</label>
+            <input type="file" id="foto-roupa" accept="image/*" required>
+
+            <label>Categoria:</label>
+            <select id="categoria" required>
+                <option value="">Selecione</option>
+                <option value="Camisa">Camisa</option>
+                <option value="Calça">Calça</option>
+                <option value="Tênis">Tênis</option>
+                <option value="Jaqueta">Jaqueta</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label>Cor:</label>
+            <input type="text" id="cor" placeholder="Ex: Preto" required>
+
+            <button type="submit" class="botao">
+                CADASTRAR ROUPA
+            </button>
+
+        </form>
+
+            <div class="lista-roupas">
+                <!-- Aqui aparecerão nossas roupas -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Provador Digital</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

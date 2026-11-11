@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    border-bottom: 1px solid #292929;
+}
+
+header h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    color: #a3a3a3;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.inicio {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.subtitulo {
+    color: #999999;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.inicio h2 {
+    font-size: 60px;
+    max-width: 800px;
+    line-height: 1.2;
+}
+
+.inicio h2 span {
+    display: block;
+    color: #999999;
+}
+
+.descricao {
+    color: #aaaaaa;
+    max-width: 550px;
+    line-height: 1.7;
+    margin: 25px 0 35px;
+}
+
+.botao {
+    background-color: #ffffff;
+    color: #111111;
+    padding: 16px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #aaaaaa;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777777;
+    border-top: 1px solid #292929;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio h2 {
+        font-size: 38px;
+    }
+}
+
+.guarda-roupa {
+    padding: 100px 8%;
+    text-align: center;
+    border-top: 1px solid #292929;
+}
+
+.guarda-roupa h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.lista-roupas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+/* FORMULÁRIO DE CADASTRO */
+
+#form-roupa {
+    background-color: #1b1b1b;
+    border: 1px solid #333333;
+    border-radius: 12px;
+
+    max-width: 500px;
+    width: 100%;
+
+    margin: 40px auto;
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: left;
+}
+
+/* Respeitar o atributo hidden */
+#form-roupa[hidden] {
+    display: none !important;
+}
+
+#form-roupa h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#form-roupa label {
+    color: #cccccc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#form-roupa input,
+#form-roupa select {
+    width: 100%;
+    padding: 14px;
+
+    background-color: #252525;
+    color: #ffffff;
+
+    border: 1px solid #444444;
+    border-radius: 6px;
+
+    font-size: 14px;
+    outline: none;
+}
+
+#form-roupa input:focus,
+#form-roupa select:focus {
+    border-color: #ffffff;
+}
+
+#form-roupa input[type="file"] {
+    cursor: pointer;
+}
+
+#form-roupa .botao {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-roupa {
+    background-color: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-roupa img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-roupa h3 {
+    margin-bottom: 8px;
+}
+
+.card-roupa p {
+    color: #aaa;
+}
